@@ -1,0 +1,136 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: 141823;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background: #212a42;
+}
+
+.widget-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Aligns widgets to the center */
+  gap: 10px; /* Adds space between widgets */
+  background-color: #212a42;
+}
+
+.tradingview-widget-container {
+  height: 610px;
+  width: 980px;
+  background-color: #212a42;
+}
+
+.toolbar-container {
+  margin-top: 30px; /* Adjust the space as needed */
+}
+
+.slider {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 30px; /* Slider covers 80% of the viewport height when expanded */
+  background-color: rgb(9, 23, 39); /* Light background for the slider */
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* Soft shadow for depth */
+  transition: all 0.5s ease-in-out; /* Smooth transition for opening/closing */
+  z-index: 100; /* Ensure it's above other content */
+  overflow: hidden; /* Hide content when slider is closed */
+}
+
+.slider.expanded {
+  height: 80vh; /* Slider covers 80% of the viewport height when expanded */
+}
+
+.slider-content {
+  padding: 15px;
+  display: none;
+  height: 100%
+
+}
+
+.slider-content label {
+  color: white;
+  font-weight: bold;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.slider-content input {
+  margin-bottom: 10px; /* Adds spacing below each input for separation */
+  background-color: rgb(186, 210, 245);
+  border-radius: 5px; /* Adjust this value to achieve the desired roundness */
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+  border: 2px solid #0b2238; /* Light grey border */
+  padding: 10px; /* Padding inside the text area */
+}
+
+.toggle-button {
+  width: 100%;
+  padding: 5px 0; /* Adequate padding for touch targets */
+  background: #011d3b; /* Example: a blue background */
+  color: white; /* Text color */
+  border: none; /* Remove default border */
+  cursor: pointer; /* Indicate clickable */
+  outline: none; /* Style focus without the default outline */
+}
+
+.trading-view-textarea {
+  width: 100%;
+  height: 84%;
+  background-color: rgb(186, 210, 245);
+  border-radius: 5px; /* Adjust this value to achieve the desired roundness */
+  resize: none; /* Disable resizing */
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+  border: 2px solid #0b2238; /* Light grey border */
+  padding: 20px; /* Padding inside the text area */
+
+  /* Additional styles to match TradingView's theme */
+}
+
+
+.expanded .slider-content {
+  display: block;
+}
+
+
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+

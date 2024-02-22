@@ -1,0 +1,28 @@
+/* Toolbar.css */
+.toolbar {
+    background-color: #212a42; /* TradingView dark theme background */
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+  }
+  
+  .toolbar button {
+    background-color: #3e81aa; /* Slightly lighter than the background for contrast */
+    color: #fff; /* White text */
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 4px; /* Rounded corners like TradingView buttons */
+    font-family: 'Trebuchet MS', sans-serif; /* A clean, sans-serif font */
+  }
+  
+  .toolbar button:hover {
+    background-color: #916507; /* Lighter on hover */
+  }
+  
+  .toolbar button.active {
+    background-color: #2962ff; /* TradingView's accent blue for the active button */
+  }
+  
