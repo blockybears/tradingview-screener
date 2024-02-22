@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/tradingview-screener/static/css/main.6df94e1c.css",
+    "main.js": "/tradingview-screener/static/js/main.43de8ccd.js",
+    "static/js/453.c2514c5e.chunk.js": "/tradingview-screener/static/js/453.c2514c5e.chunk.js",
+    "index.html": "/tradingview-screener/index.html",
+    "main.6df94e1c.css.map": "/tradingview-screener/static/css/main.6df94e1c.css.map",
+    "main.43de8ccd.js.map": "/tradingview-screener/static/js/main.43de8ccd.js.map",
+    "453.c2514c5e.chunk.js.map": "/tradingview-screener/static/js/453.c2514c5e.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6df94e1c.css",
+    "static/js/main.43de8ccd.js"
+  ]
+}
